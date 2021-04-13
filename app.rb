@@ -17,9 +17,16 @@ get '/matt' do
   "Hi Adam"
 end
 
-get '/cat' do
+get '/random-cat' do
   @name = ["Batman", "Darkseid", "Hulk"].sample
   erb(:index)
 end
+
+get '/named-cat' do
+  @name = params[:name]
+  erb(:index)
+end
+
+
 
 # http://localhost:4567
