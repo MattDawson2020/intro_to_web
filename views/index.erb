@@ -1,16 +1,3 @@
-<% if !@name %>
-  <form action="/named-cat">
-    <li>
-      <label for="name">Name:</label>
-      <input type="text" name="name">
-    </li>
-    <li>
-      <label for="submit"></label>
-      <input type="submit" value="submit">
-    </li>
-  </form>
-<% end %>
-
 <% if @name %>
   <h1> "Hi my name is <%= @name %>"
 <% end %>
