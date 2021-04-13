@@ -18,6 +18,7 @@ get '/matt' do
 end
 
 get '/cat' do
+  @name = ["Batman", "Darkseid", "Hulk"].sample
   erb(:index)
 end
 
